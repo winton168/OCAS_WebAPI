@@ -1,0 +1,22 @@
+2021-05-23 23:37:37.181 -04:00 [INF] Application Is Starting
+2021-05-23 23:37:43.879 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-23 23:37:43.887 -04:00 [INF] Hosting environment: Development
+2021-05-23 23:37:43.889 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-23 23:37:43.941 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-23 23:37:44.271 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 333.2866ms
+2021-05-23 23:37:44.514 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-23 23:37:44.685 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.2416ms
+2021-05-23 23:37:57.084 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/GetAll - -
+2021-05-23 23:37:57.178 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-23 23:37:57.275 -04:00 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IList`1[OCAS.DataAccess.User]] GetAll() on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-23 23:37:57.828 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-23 23:37:59.179 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-23 23:38:02.579 -04:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-23 23:38:02.658 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4819.1473ms.
+2021-05-23 23:38:02.673 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.DataAccess.User, OCAS.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 23:38:02.982 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) in 5698.4754ms
+2021-05-23 23:38:02.987 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-23 23:38:03.000 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/GetAll - - - 200 633 application/json;+charset=utf-8 5916.2163ms

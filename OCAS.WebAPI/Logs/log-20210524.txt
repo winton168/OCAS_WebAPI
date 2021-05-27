@@ -1,0 +1,230 @@
+2021-05-24 00:14:43.247 -04:00 [INF] Application Is Starting
+2021-05-24 00:14:50.977 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 00:14:51.008 -04:00 [INF] Hosting environment: Development
+2021-05-24 00:14:51.010 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 00:14:51.097 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 00:14:51.377 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 282.7878ms
+2021-05-24 00:14:51.627 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 00:14:51.813 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 187.1880ms
+2021-05-24 00:14:59.470 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/GetAll - -
+2021-05-24 00:14:59.543 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 00:14:59.607 -04:00 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 00:15:00.816 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 00:15:02.295 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 00:15:05.175 -04:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-24 00:15:05.311 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4483.6572ms.
+2021-05-24 00:15:05.327 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.UserDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-24 00:15:05.637 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) in 6016.4255ms
+2021-05-24 00:15:05.639 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 00:15:05.658 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/GetAll - - - 200 264 application/json;+charset=utf-8 6188.4933ms
+2021-05-24 00:31:23.421 -04:00 [INF] Application Is Starting
+2021-05-24 00:31:29.760 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 00:31:29.765 -04:00 [INF] Hosting environment: Development
+2021-05-24 00:31:29.767 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 00:31:29.809 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 00:31:30.062 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 257.6179ms
+2021-05-24 00:31:30.342 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 00:31:30.527 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 185.0653ms
+2021-05-24 00:31:36.299 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/GetAll - -
+2021-05-24 00:31:36.392 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 00:31:36.478 -04:00 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 00:31:38.056 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 00:31:39.607 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 00:31:43.577 -04:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-24 00:31:43.662 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5595.7339ms.
+2021-05-24 00:31:43.679 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.UserDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-24 00:31:43.986 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) in 7499.6992ms
+2021-05-24 00:31:43.987 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 00:31:44.005 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/GetAll - - - 200 293 application/json;+charset=utf-8 7705.7375ms
+2021-05-24 00:35:22.227 -04:00 [INF] Application Is Starting
+2021-05-24 00:35:29.210 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 00:35:29.235 -04:00 [INF] Hosting environment: Development
+2021-05-24 00:35:29.238 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 00:35:29.291 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 00:35:29.573 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 288.7991ms
+2021-05-24 00:35:29.848 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 00:35:30.020 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.8372ms
+2021-05-24 00:36:19.528 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/GetAll - -
+2021-05-24 00:36:19.627 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 00:36:19.686 -04:00 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 00:36:20.929 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 00:36:22.300 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 00:36:26.065 -04:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-24 00:36:26.157 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5215.4276ms.
+2021-05-24 00:36:26.175 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.UserDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-24 00:36:26.484 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) in 6787.9327ms
+2021-05-24 00:36:26.486 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 00:36:26.499 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/GetAll - - - 200 289 application/json;+charset=utf-8 6970.2506ms
+2021-05-24 09:11:12.601 -04:00 [INF] Application Is Starting
+2021-05-24 09:11:18.506 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 09:11:18.547 -04:00 [INF] Hosting environment: Development
+2021-05-24 09:11:18.549 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 09:11:18.599 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 09:11:18.859 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 240.2056ms
+2021-05-24 09:11:19.068 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 09:11:19.235 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.6673ms
+2021-05-24 09:11:26.270 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-24 09:11:26.358 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-24 09:11:26.418 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-24 09:11:27.282 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 09:11:28.680 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 09:11:32.252 -04:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-24 09:11:32.335 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5040.4631ms.
+2021-05-24 09:11:32.359 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-24 09:11:32.683 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 6253.6382ms
+2021-05-24 09:11:32.685 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-24 09:11:32.697 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 6427.1000ms
+2021-05-24 09:27:14.901 -04:00 [INF] Application Is Starting
+2021-05-24 09:27:19.053 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 09:27:19.058 -04:00 [INF] Hosting environment: Development
+2021-05-24 09:27:19.060 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 09:27:19.110 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 09:27:19.370 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 262.1630ms
+2021-05-24 09:27:19.611 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 09:27:19.790 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.5430ms
+2021-05-24 09:28:17.513 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/InsertNew application/json-patch+json 127
+2021-05-24 09:28:17.523 -04:00 [INF] CORS policy execution successful.
+2021-05-24 09:28:17.609 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.InsertNew (OCAS.WebAPI)'
+2021-05-24 09:28:17.673 -04:00 [INF] Route matched with {action = "InsertNew", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertNew(OCAS.WebAPI.Models.UserDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 09:28:18.398 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.InsertNew (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 09:28:19.627 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 09:28:22.666 -04:00 [INF] Executed DbCommand (105ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-24 09:28:22.813 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.InsertNew (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4404.1506ms.
+2021-05-24 09:28:22.828 -04:00 [INF] Executing OkObjectResult, writing value of type 'OCAS.DataAccess.User'.
+2021-05-24 09:28:22.917 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.InsertNew (OCAS.WebAPI) in 5235.6864ms
+2021-05-24 09:28:22.919 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.InsertNew (OCAS.WebAPI)'
+2021-05-24 09:28:22.931 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/InsertNew application/json-patch+json 127 - 200 286 application/json;+charset=utf-8 5433.5020ms
+2021-05-24 09:34:14.949 -04:00 [INF] Application Is Starting
+2021-05-24 09:34:18.033 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 09:34:18.038 -04:00 [INF] Hosting environment: Development
+2021-05-24 09:34:18.039 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 09:34:18.104 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 09:34:18.380 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 273.5195ms
+2021-05-24 09:34:18.672 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 09:34:18.872 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.5632ms
+2021-05-24 09:35:02.194 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 109
+2021-05-24 09:35:02.206 -04:00 [INF] CORS policy execution successful.
+2021-05-24 09:35:02.302 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 09:35:02.376 -04:00 [INF] Route matched with {action = "Insert", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(OCAS.WebAPI.Models.UserInsertDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 09:35:03.187 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 09:35:04.421 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 09:35:07.414 -04:00 [INF] Executed DbCommand (84ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-24 09:35:07.554 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4355.1841ms.
+2021-05-24 09:35:07.569 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-24 09:35:07.664 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) in 5274.8695ms
+2021-05-24 09:35:07.668 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 09:35:07.680 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 109 - 200 62 application/json;+charset=utf-8 5503.4225ms
+2021-05-24 16:34:10.195 -04:00 [INF] Application Is Starting
+2021-05-24 16:34:16.603 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-24 16:34:16.607 -04:00 [INF] Hosting environment: Development
+2021-05-24 16:34:16.610 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-24 16:34:16.663 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-24 16:34:17.084 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 394.2018ms
+2021-05-24 16:34:17.341 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-24 16:34:17.555 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.2536ms
+2021-05-24 16:34:27.933 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/GetAll - -
+2021-05-24 16:34:28.020 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 16:34:28.075 -04:00 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 16:34:28.657 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 16:34:29.838 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 16:34:33.214 -04:00 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-24 16:34:33.309 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4640.6236ms.
+2021-05-24 16:34:33.326 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.UserDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-24 16:34:33.654 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI) in 5568.3667ms
+2021-05-24 16:34:33.655 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.GetAll (OCAS.WebAPI)'
+2021-05-24 16:34:33.670 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/GetAll - - - 200 581 application/json;+charset=utf-8 5737.6414ms
+2021-05-24 16:35:10.886 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 109
+2021-05-24 16:35:10.895 -04:00 [INF] CORS policy execution successful.
+2021-05-24 16:35:10.902 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 16:35:10.943 -04:00 [INF] Route matched with {action = "Insert", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(OCAS.WebAPI.Models.UserInsertDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 16:35:11.146 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 16:35:11.198 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 16:35:11.690 -04:00 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-24 16:35:11.774 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 627.8126ms.
+2021-05-24 16:35:11.775 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-24 16:35:11.790 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) in 846.7519ms
+2021-05-24 16:35:11.790 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 16:35:11.791 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 109 - 200 62 application/json;+charset=utf-8 923.0059ms
+2021-05-24 16:36:05.523 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 116
+2021-05-24 16:36:05.526 -04:00 [INF] CORS policy execution successful.
+2021-05-24 16:36:05.540 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 16:36:05.541 -04:00 [INF] Route matched with {action = "Insert", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(OCAS.WebAPI.Models.UserInsertDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 16:36:05.574 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 16:36:05.602 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 16:36:05.615 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-24 16:36:05.618 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.3987ms.
+2021-05-24 16:36:05.619 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-24 16:36:05.619 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) in 78.6267ms
+2021-05-24 16:36:05.619 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 16:36:05.620 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 116 - 200 62 application/json;+charset=utf-8 97.0953ms
+2021-05-24 16:36:14.156 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 116
+2021-05-24 16:36:14.157 -04:00 [INF] CORS policy execution successful.
+2021-05-24 16:36:14.157 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 16:36:14.157 -04:00 [INF] Route matched with {action = "Insert", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(OCAS.WebAPI.Models.UserInsertDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 16:36:14.194 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 16:36:14.196 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 16:36:14.209 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-24 16:36:14.211 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.2097ms.
+2021-05-24 16:36:14.211 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-24 16:36:14.213 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) in 55.745ms
+2021-05-24 16:36:14.213 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-24 16:36:14.214 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/Insert application/json-patch+json 116 - 200 62 application/json;+charset=utf-8 57.5058ms
+2021-05-24 16:37:18.912 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/Search?PageIndex=1&PageSize=2&Sort=firstNameAsc - -
+2021-05-24 16:37:18.913 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI)'
+2021-05-24 16:37:18.959 -04:00 [INF] Route matched with {action = "Search", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OCAS.WebAPI.Helpers.Pagination`1[OCAS.WebAPI.Models.UserDTO]]] Search(OCAS.Core.Specifications.UserSpecParams) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-24 16:37:19.019 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-24 16:37:19.026 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-24 16:37:19.035 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-24 16:37:19.079 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 59.5066ms.
+2021-05-24 16:37:19.080 -04:00 [INF] Executing OkObjectResult, writing value of type 'OCAS.WebAPI.Helpers.Pagination`1[[OCAS.WebAPI.Models.UserDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-24 16:37:19.089 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI) in 130.2696ms
+2021-05-24 16:37:19.090 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI)'
+2021-05-24 16:37:19.093 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/Search?PageIndex=1&PageSize=2&Sort=firstNameAsc - - - 200 353 application/json;+charset=utf-8 180.8136ms

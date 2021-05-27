@@ -1,0 +1,453 @@
+2021-05-26 17:20:22.121 -04:00 [INF] Application Is Starting
+2021-05-26 17:20:33.502 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-26 17:20:33.508 -04:00 [INF] Hosting environment: Development
+2021-05-26 17:20:33.510 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-26 17:20:33.582 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-26 17:20:33.974 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 392.4242ms
+2021-05-26 17:20:34.306 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-26 17:20:34.563 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.1599ms
+2021-05-26 18:19:11.441 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 18:19:11.482 -04:00 [INF] CORS policy execution successful.
+2021-05-26 18:19:11.646 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:19:11.733 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 18:19:12.948 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 18:19:14.608 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 18:19:18.578 -04:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 18:19:18.653 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5692.7473ms.
+2021-05-26 18:19:18.669 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 18:19:18.984 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 7240.2565ms
+2021-05-26 18:19:18.986 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:19:19.000 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 7574.2338ms
+2021-05-26 18:20:36.427 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 18:20:36.427 -04:00 [INF] CORS policy execution successful.
+2021-05-26 18:20:36.436 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:20:36.437 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 18:20:36.880 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 18:20:37.005 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 18:20:37.025 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 18:20:37.026 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 126.0575ms.
+2021-05-26 18:20:37.027 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 18:20:37.028 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 590.5827ms
+2021-05-26 18:20:37.028 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:20:37.029 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 602.0943ms
+2021-05-26 18:21:30.870 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 18:21:30.871 -04:00 [INF] CORS policy execution successful.
+2021-05-26 18:21:30.873 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:21:30.890 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 18:21:30.948 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 18:21:30.967 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 18:21:30.980 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 18:21:31.005 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 57.1819ms.
+2021-05-26 18:21:31.006 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 18:21:31.007 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 116.5583ms
+2021-05-26 18:21:31.007 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:21:31.008 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 138.0727ms
+2021-05-26 18:22:05.413 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 18:22:05.413 -04:00 [INF] CORS policy execution successful.
+2021-05-26 18:22:05.413 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:22:05.414 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 18:22:05.502 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 18:22:05.511 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 18:22:05.532 -04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 18:22:05.571 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 68.6187ms.
+2021-05-26 18:22:05.573 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 18:22:05.574 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 159.7937ms
+2021-05-26 18:22:05.574 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 18:22:05.577 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 163.9461ms
+2021-05-26 19:23:48.617 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 19:23:48.621 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:23:48.621 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:23:48.622 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 19:23:48.704 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:23:48.707 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:23:49.801 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 19:23:49.801 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1097.7452ms.
+2021-05-26 19:23:49.802 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:23:49.803 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 1181.1588ms
+2021-05-26 19:23:49.804 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:23:49.805 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 1188.2819ms
+2021-05-26 19:24:09.008 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 19:24:09.028 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:24:09.029 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:24:09.029 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 19:24:09.144 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:24:09.144 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:24:09.164 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 19:24:09.165 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.7861ms.
+2021-05-26 19:24:09.165 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:24:09.166 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 136.969ms
+2021-05-26 19:24:09.166 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:24:09.167 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 159.6559ms
+2021-05-26 19:29:37.524 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 19:29:37.524 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:29:37.540 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:29:37.541 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 19:29:37.583 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:29:37.585 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:29:37.607 -04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 19:29:37.608 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.1851ms.
+2021-05-26 19:29:37.608 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:29:37.627 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 86.1688ms
+2021-05-26 19:29:37.627 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:29:37.628 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 105.5407ms
+2021-05-26 19:54:09.957 -04:00 [INF] Application Is Starting
+2021-05-26 19:54:15.999 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-26 19:54:16.005 -04:00 [INF] Hosting environment: Development
+2021-05-26 19:54:16.007 -04:00 [INF] Content root path: C:\Winton_Workspace\OCAS\Backend\OCAS_Backend\OCAS\OCAS.WebAPI
+2021-05-26 19:54:16.081 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/index.html - -
+2021-05-26 19:54:16.405 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/index.html - - - 200 - text/html;charset=utf-8 331.2447ms
+2021-05-26 19:54:16.673 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - -
+2021-05-26 19:54:16.925 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 250.7651ms
+2021-05-26 19:54:36.539 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 19:54:36.552 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:54:36.715 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:54:36.780 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 19:54:37.397 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:54:38.803 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:54:41.194 -04:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 19:54:41.271 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3861.6403ms.
+2021-05-26 19:54:41.285 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:54:41.584 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 4793.8596ms
+2021-05-26 19:54:41.585 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:54:41.598 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 5058.6912ms
+2021-05-26 19:55:27.323 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 19:55:27.324 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:55:27.334 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:55:27.335 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 19:55:27.513 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:55:27.622 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:55:27.656 -04:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 19:55:27.657 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 143.4189ms.
+2021-05-26 19:55:27.659 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:55:27.662 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 326.3203ms
+2021-05-26 19:55:27.662 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:55:27.662 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 358.5563ms
+2021-05-26 19:56:02.836 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/Insert - -
+2021-05-26 19:56:02.837 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:56:02.838 -04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-05-26 19:56:02.839 -04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-05-26 19:56:02.862 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/Insert - - - 405 - - 40.5652ms
+2021-05-26 19:57:12.059 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 19:57:12.059 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:57:12.060 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:57:12.060 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 19:57:12.196 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:57:12.257 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:57:12.266 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 19:57:12.266 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 70.2367ms.
+2021-05-26 19:57:12.266 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:57:12.268 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 207.7605ms
+2021-05-26 19:57:12.268 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 19:57:12.272 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 212.7855ms
+2021-05-26 19:57:29.272 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44309/api/Users/Insert - -
+2021-05-26 19:57:29.273 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:57:29.275 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44309/api/Users/Insert - - - 204 - - 2.3212ms
+2021-05-26 19:57:29.281 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/Insert application/json 120
+2021-05-26 19:57:29.281 -04:00 [INF] CORS policy execution successful.
+2021-05-26 19:57:29.284 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-26 19:57:29.314 -04:00 [INF] Route matched with {action = "Insert", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(OCAS.WebAPI.Models.UserInsertDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-26 19:57:29.570 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 19:57:29.574 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 19:57:30.091 -04:00 [INF] Executed DbCommand (84ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-26 19:57:30.182 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 612.1397ms.
+2021-05-26 19:57:30.183 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[OCAS.DataAccess.User, OCAS.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 19:57:30.217 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) in 902.0866ms
+2021-05-26 19:57:30.217 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-26 19:57:30.217 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/Insert application/json 120 - 200 370 application/json;+charset=utf-8 936.1661ms
+2021-05-26 20:05:31.152 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 20:05:31.177 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:05:31.177 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:05:31.177 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 20:05:31.215 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 20:05:31.219 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 20:05:33.168 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 20:05:33.169 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1953.5349ms.
+2021-05-26 20:05:33.169 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 20:05:33.170 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 1992.6339ms
+2021-05-26 20:05:33.170 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:05:33.171 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 2019.0403ms
+2021-05-26 20:07:17.524 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44309/api/Users/Insert - -
+2021-05-26 20:07:17.526 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:07:17.541 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44309/api/Users/Insert - - - 204 - - 2.0335ms
+2021-05-26 20:07:17.542 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44309/api/Users/Insert application/json 109
+2021-05-26 20:07:17.542 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:07:17.542 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-26 20:07:17.543 -04:00 [INF] Route matched with {action = "Insert", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(OCAS.WebAPI.Models.UserInsertDTO) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-26 20:07:17.607 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 20:07:17.608 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 20:07:17.627 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 1500), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100), @p7='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([ActivityId], [Comments], [DateCreated], [DateUpdated], [EmailAddress], [FirstName], [LastName], [UserGuid])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [UserId]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2021-05-26 20:07:17.632 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.1754ms.
+2021-05-26 20:07:17.632 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[OCAS.DataAccess.User, OCAS.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 20:07:17.634 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI) in 91.3284ms
+2021-05-26 20:07:17.634 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Insert (OCAS.WebAPI)'
+2021-05-26 20:07:17.635 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44309/api/Users/Insert application/json 109 - 200 359 application/json;+charset=utf-8 92.8324ms
+2021-05-26 20:07:25.153 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 20:07:25.153 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:07:25.153 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:07:25.154 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 20:07:25.196 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 20:07:25.197 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 20:07:25.205 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 20:07:25.206 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.4541ms.
+2021-05-26 20:07:25.206 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 20:07:25.207 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 52.4262ms
+2021-05-26 20:07:25.208 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:07:25.211 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 56.4072ms
+2021-05-26 20:47:30.188 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 20:47:30.211 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:47:30.212 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:47:30.213 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 20:47:30.259 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 20:47:30.261 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 20:47:32.216 -04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 20:47:32.217 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1957.9249ms.
+2021-05-26 20:47:32.218 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 20:47:32.220 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 2006.6632ms
+2021-05-26 20:47:32.220 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:47:32.220 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 2035.2600ms
+2021-05-26 20:50:17.188 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 20:50:17.189 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:50:17.189 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:50:17.190 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 20:50:17.358 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 20:50:17.367 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 20:50:17.516 -04:00 [INF] Executed DbCommand (143ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 20:50:17.553 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 193.7729ms.
+2021-05-26 20:50:17.554 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 20:50:17.563 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 373.2812ms
+2021-05-26 20:50:17.564 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:50:17.564 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 375.9968ms
+2021-05-26 20:56:02.810 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 20:56:02.811 -04:00 [INF] CORS policy execution successful.
+2021-05-26 20:56:02.812 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:56:02.812 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 20:56:02.978 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 20:56:03.006 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 20:56:04.901 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 20:56:04.902 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1918.9128ms.
+2021-05-26 20:56:04.902 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 20:56:04.904 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 2091.4296ms
+2021-05-26 20:56:04.904 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 20:56:04.907 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 2096.3341ms
+2021-05-26 21:02:13.935 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:02:13.936 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:02:13.936 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:02:13.937 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:02:14.016 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:02:14.051 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:02:15.966 -04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:02:15.968 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1951.951ms.
+2021-05-26 21:02:15.982 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:02:15.984 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 2047.2346ms
+2021-05-26 21:02:15.984 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:02:15.985 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 2049.2527ms
+2021-05-26 21:02:43.569 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:02:43.610 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:02:43.610 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:02:43.610 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:02:43.726 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:02:43.727 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:02:43.842 -04:00 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:02:43.843 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 116.7003ms.
+2021-05-26 21:02:43.843 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:02:43.848 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 237.0555ms
+2021-05-26 21:02:43.848 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:02:43.850 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 279.8778ms
+2021-05-26 21:03:25.750 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:03:25.750 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:03:25.750 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:03:25.751 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:03:25.888 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:03:25.889 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:03:25.900 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:03:25.918 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 29.4615ms.
+2021-05-26 21:03:25.919 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:03:25.919 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 168.711ms
+2021-05-26 21:03:25.920 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:03:25.920 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 170.7036ms
+2021-05-26 21:04:56.115 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:04:56.117 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:04:56.118 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:04:56.119 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:04:56.256 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:04:56.287 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:04:56.363 -04:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:04:56.366 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 102.0244ms.
+2021-05-26 21:04:56.367 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:04:56.370 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 250.8321ms
+2021-05-26 21:04:56.370 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:04:56.371 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 257.9383ms
+2021-05-26 21:06:56.015 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:06:56.016 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:06:56.016 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:06:56.018 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:06:56.108 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:06:56.109 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:06:56.184 -04:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:06:56.186 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 77.8994ms.
+2021-05-26 21:06:56.187 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:06:56.190 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 171.3246ms
+2021-05-26 21:06:56.190 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:06:56.193 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 177.1065ms
+2021-05-26 21:07:47.712 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:07:47.715 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:07:47.715 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:07:47.716 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:07:47.850 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:07:47.876 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:07:47.886 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:07:47.887 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.149ms.
+2021-05-26 21:07:47.887 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:07:47.888 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 172.5734ms
+2021-05-26 21:07:47.889 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:07:47.889 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 177.4298ms
+2021-05-26 21:39:06.054 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:39:06.055 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:39:06.056 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:39:06.056 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:39:06.121 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:39:06.122 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:39:08.046 -04:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:39:08.048 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1926.1469ms.
+2021-05-26 21:39:08.048 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:39:08.050 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 1993.6831ms
+2021-05-26 21:39:08.050 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:39:08.052 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 1998.3288ms
+2021-05-26 21:56:23.030 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 21:56:23.032 -04:00 [INF] CORS policy execution successful.
+2021-05-26 21:56:23.052 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:56:23.053 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 21:56:23.099 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 21:56:23.101 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 21:56:25.017 -04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 21:56:25.020 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1920.0497ms.
+2021-05-26 21:56:25.034 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 21:56:25.036 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 1982.963ms
+2021-05-26 21:56:25.036 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 21:56:25.036 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 2006.3648ms
+2021-05-26 22:01:48.870 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 22:01:48.873 -04:00 [INF] CORS policy execution successful.
+2021-05-26 22:01:48.933 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 22:01:48.934 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 22:01:49.000 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 22:01:49.001 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 22:01:49.041 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 22:01:49.061 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.2693ms.
+2021-05-26 22:01:49.061 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 22:01:49.062 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 128.4069ms
+2021-05-26 22:01:49.062 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 22:01:49.063 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 193.0000ms
+2021-05-26 22:02:32.475 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Activities/GetAll - -
+2021-05-26 22:02:32.475 -04:00 [INF] CORS policy execution successful.
+2021-05-26 22:02:32.476 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 22:02:32.476 -04:00 [INF] Route matched with {action = "GetAll", controller = "Activities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OCAS.WebAPI.Controllers.ActivitiesController (OCAS.WebAPI).
+2021-05-26 22:02:32.593 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 22:02:32.597 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 22:02:32.625 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44309/api/Users/Search?sort=firstNameAsc&pageIndex=1&pageSize=10 - -
+2021-05-26 22:02:32.626 -04:00 [INF] CORS policy execution successful.
+2021-05-26 22:02:32.628 -04:00 [INF] Executing endpoint 'OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI)'
+2021-05-26 22:02:32.650 -04:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [Activity] AS [a]
+WHERE [a].[IsActive] = CAST(1 AS bit)
+2021-05-26 22:02:32.651 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 54.9286ms.
+2021-05-26 22:02:32.651 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OCAS.WebAPI.Models.ActivityDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 22:02:32.652 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI) in 175.8917ms
+2021-05-26 22:02:32.652 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.ActivitiesController.GetAll (OCAS.WebAPI)'
+2021-05-26 22:02:32.653 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Activities/GetAll - - - 200 207 application/json;+charset=utf-8 178.1094ms
+2021-05-26 22:02:32.671 -04:00 [INF] Route matched with {action = "Search", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OCAS.WebAPI.Helpers.Pagination`1[OCAS.WebAPI.Models.UserDTO]]] Search(OCAS.Core.Specifications.UserSpecParams) on controller OCAS.WebAPI.Controllers.UsersController (OCAS.WebAPI).
+2021-05-26 22:02:32.753 -04:00 [INF] Executing action method OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI) - Validation state: "Valid"
+2021-05-26 22:02:32.768 -04:00 [INF] Entity Framework Core 5.0.6 initialized 'OCASContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-26 22:02:32.989 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ActivityId], [u].[Comments], [u].[DateCreated], [u].[DateUpdated], [u].[EmailAddress], [u].[FirstName], [u].[LastName], [u].[UserGuid], [a].[ActivityId], [a].[ActivityName], [a].[IsActive]
+FROM [User] AS [u]
+INNER JOIN [Activity] AS [a] ON [u].[ActivityId] = [a].[ActivityId]
+2021-05-26 22:02:33.013 -04:00 [INF] Executed action method OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 259.4252ms.
+2021-05-26 22:02:33.013 -04:00 [INF] Executing OkObjectResult, writing value of type 'OCAS.WebAPI.Helpers.Pagination`1[[OCAS.WebAPI.Models.UserDTO, OCAS.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-26 22:02:33.032 -04:00 [INF] Executed action OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI) in 360.2441ms
+2021-05-26 22:02:33.032 -04:00 [INF] Executed endpoint 'OCAS.WebAPI.Controllers.UsersController.Search (OCAS.WebAPI)'
+2021-05-26 22:02:33.033 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44309/api/Users/Search?sort=firstNameAsc&pageIndex=1&pageSize=10 - - - 200 1376 application/json;+charset=utf-8 407.3595ms
