@@ -130,7 +130,7 @@ namespace OCAS.WebAPI.Controllers
                         case "firstNameDesc":
                             _userList = _userList.OrderByDescending(c => c.FirstName).ToList();
                             break;
-                        case "LastNameAsc":
+                        case "lastNameAsc":
                             _userList = _userList.OrderBy(c => c.LastName).ToList();
                             break;
                         case "lastNameDesc":
@@ -145,7 +145,16 @@ namespace OCAS.WebAPI.Controllers
                     }
                 }
 
-                
+                if ( ! string.IsNullOrEmpty(userParams.SearchWords))
+                {
+                    string _searchWords = userParams.SearchWords.ToLower();
+                    _userList = _userList.Where(x => x.FirstName.ToLower().Contains(_searchWords) ||
+                                                x.LastName.ToLower().Contains( _searchWords) ||
+                                                x.EmailAddress.ToLower().Contains(_searchWords)
+                    ).ToList();
+                }
+
+
                 int totalItems = _userList.Count();
 
                 // PageIndex from PageItemNN to PageItemNN
